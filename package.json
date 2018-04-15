@@ -1,0 +1,19 @@
+{
+  "name": "aubi",
+  "version": "1.0.0",
+  "description": "A betting calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run:test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/19930213cm/aubi.git"
+  },
+  "author": "chris m",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/19930213cm/aubi/issues"
+  },
+  "homepage": "https://github.com/19930213cm/aubi#readme"
+}
