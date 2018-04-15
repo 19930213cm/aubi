@@ -1,6 +1,6 @@
-const https = require('https');
+import https from 'https';
 
-const getData = () => {
+const getData = () => (
     https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (resp) => {
           let data = '';
         
@@ -8,6 +8,7 @@ const getData = () => {
           resp.on('data', (chunk) => {
             data += chunk;
           });
+    })
+);
 
-    console.log(data);
-}
+export default getData;

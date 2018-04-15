@@ -4,7 +4,9 @@
   "description": "A betting calculator",
   "main": "index.js",
   "scripts": {
-    "test": "npm run:test"
+    "babel": "babel --presets es2015 index.js -o index.bundle.js",
+    "test": "npm run:test",
+    "start": "node index.bundle.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/19930213cm/aubi/issues"
   },
-  "homepage": "https://github.com/19930213cm/aubi#readme"
+  "homepage": "https://github.com/19930213cm/aubi#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.1"
+  }
 }
